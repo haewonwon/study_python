@@ -107,17 +107,27 @@ import random
 day = int(input("오늘 날짜를 입력하시오."))
 car_number = int(input("차량 번호를 입력하시오."))
 
-if day % 2 == 0 : print("오늘은 짝수 차량 입장 가능")
-else : print("오늘은 홀수 차량 입장 가능")
+if day % 2 == 0:
+    print("오늘은 짝수 차량 입장 가능")
+else:
+    print("오늘은 홀수 차량 입장 가능")
 
-if day % 2 == 0 and car_number % 2 : print("귀하의 차량은 오늘 입차 가능합니다.")
-elif day % 2 != 0 and car_number % 2 != 0 : print("귀하의 차량은 오늘 입차 가능합니다.")
-else : print("귀하의 차량은 오늘 입차 불가합니다.")
+if day % 2 == 0 and car_number % 2:
+    print("귀하의 차량은 오늘 입차 가능합니다.")
+elif day % 2 != 0 and car_number % 2 != 0:
+    print("귀하의 차량은 오늘 입차 가능합니다.")
+else:
+    print("귀하의 차량은 오늘 입차 불가합니다.")
 
 score = int(input("점수를 입력하시오."))
 
-if score >= 90 : print("A입니다.")
-elif score >= 80 : print("B입니다.")
-elif score >= 70 : print("C입니다.")
-elif score >= 60 : print("D입니다.")
-else : print("F입니다.")
+if score >= 90:
+    print("A입니다.")
+elif score >= 80:
+    print("B입니다.")
+elif score >= 70:
+    print("C입니다.")
+elif score >= 60:
+    print("D입니다.")
+else:
+    print("F입니다.")
